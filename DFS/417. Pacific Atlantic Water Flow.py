@@ -21,11 +21,11 @@ class Solution:
         
         for row in range(rows):
             dfs(row,0,heights[row][0],pacific)
-            dfs(row,rows-1,heights[row][rows-1],atlantic)
+            dfs(row,cols-1,heights[row][cols-1],atlantic)
 
         for col in range(cols):
             dfs(0,col,heights[0][col],pacific)
-            dfs(cols-1,col,heights[cols-1][col],atlantic)
+            dfs(rows-1,col,heights[rows-1][col],atlantic)
 
         for row in range(rows):
             for col in range(cols):
