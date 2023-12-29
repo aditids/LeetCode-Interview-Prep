@@ -6,7 +6,7 @@ Welcome to my LeetCode Interview Preparation repository! This repository contain
 
 - [Array](./Arrays)
 - [String](./Strings)
-- [Linked List](./LinkedLists)
+- [Linked List](./Linked List)
 - [Depth-First Search (DFS)](./DFS)
 - [Breadth-First Search (BFS)](./bfs)
 - [Dynamic Programming (DP)](./DP)
