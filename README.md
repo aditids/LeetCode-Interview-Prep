@@ -5,8 +5,9 @@ Welcome to my LeetCode Interview Preparation repository! This repository contain
 ## Table of Contents
 
 - [Array](./Arrays)
+- [Two Pointers](./Two%20Pointers)
 - [String](./Strings)
-- [Linked List](./LinkedLists)
+- [Linked List](./Linked%20List)
 - [Depth-First Search (DFS)](./DFS)
 - [Breadth-First Search (BFS)](./bfs)
 - [Dynamic Programming (DP)](./DP)
