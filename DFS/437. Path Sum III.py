@@ -24,3 +24,25 @@ class Solution:
         return dfs(root, targetSum) + self.pathSum(root.left, targetSum) + self.pathSum(root.right, targetSum)
 
 # Time Complexity - O(n^2), Space complexity - O(n)        
+    
+
+    # Alternate solution - 
+    
+        # def dfs(node, pathSum, count):
+            
+        #     if not node:return 0
+
+        #     curSum = pathSum + node.val
+        #     tempSum = 0
+
+        #     if curSum == targetSum:
+        #         tempSum += 1
+
+        #     tempSum += count[curSum-targetSum]
+        #     count[curSum] += 1
+        #     tempSum += dfs(node.left, curSum, count) + dfs(node.right, curSum, count)
+        #     count[curSum] -= 1
+
+        #     return tempSum
+            
+        # return dfs(root, 0, defaultdict(int))
