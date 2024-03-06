@@ -1,0 +1,43 @@
+# 2462. Total Cost to Hire K Workers
+
+class Solution:
+    def totalCost(self, costs: List[int], k: int, candidates: int) -> int:
+        total = 0 
+        h1 = []
+        h2 = []
+        hi = set()
+        hj = set()
+        i = 0
+        j = len(costs)-1
+        while k:
+            k-=1            
+            
+            while i<len(costs) and len(h1)<candidates:
+                if costs[i]>0 and (costs[i],i) not in hi:
+                    heapq.heappush(h1,(costs[i],i))
+                    hi.add((costs[i],i))
+                i+=1
+            
+            while j>=0 and len(h2)<candidates :
+                if costs[j]>0 and (costs[j],j) not in hj:
+                    heapq.heappush(h2,(costs[j],j))
+                    hj.add((costs[j],j))
+                j-=1
+                
+            c1, i1 = heapq.heappop(h1)
+            c2, i2 = heapq.heappop(h2)
+            if c1<=c2:
+                total+=c1
+                costs[i1] = -1
+                if i1!=i2:
+                    heapq.heappush(h2,(c2, i2))
+                    hi.remove((c1, i1))
+                else:
+                    hj.remove((c2, i2))
+            else:
+                total+=c2
+                costs[i2] = -1
+                heapq.heappush(h1,(c1, i1))
+                hj.remove((c2, i2))               
+                
+        return total           
