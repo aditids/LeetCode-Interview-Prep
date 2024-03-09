@@ -5,20 +5,24 @@ Welcome to my LeetCode Interview Preparation repository! This repository contain
 ## Table of Contents
 
 - [Array](./Arrays)
-- [Two Pointers](./Two%20Pointers)
-- [String](./Strings)
-- [Linked List](./Linked%20List)
-- [Depth-First Search (DFS)](./DFS)
 - [Breadth-First Search (BFS)](./BFS)
+- [Backtracking](./Backtracking)
+- [Binary Trees](./Binary Trees)
+- [Bit Manipulation](./Bit Manipulation)
+- [Depth-First Search (DFS)](./DFS)
 - [Dynamic Programming (DP)](./Dynamic%20Programming)
-- [Sorting and Searching](./Sort-Search)
 - [Graph](./Graphs)
-- [Hashing](./Hashing)
 - [Greedy](./Greedy)
-- [Bit Manipulation](./Bit-Manipulation)
-- [Math](./Math)
-- [Design](./Design)
-- [Others](./Others)
+- [Hashing](./Hashing)
+- [Heap](./Heap)
+- [Intervals](./Intervals)
+- [Linked List](./Linked%20List)
+- [String](./Strings)
+- [Sliding Window](./Sliding Window)
+- [Stack](./Stack)
+- [Two Pointers](./Two%20Pointers)
+- [Queues](./Queues)
+
 
 ## How to Use
 
